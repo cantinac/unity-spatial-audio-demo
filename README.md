@@ -13,3 +13,4 @@
 | Google Resonance Audio | <https://resonance-audio.github.io/resonance-audio/> |
 | Steam Audio | <https://valvesoftware.github.io/steam-audio/downloads> |
 | Microsoft MixedRealityToolkit | <https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/master/Assets/HoloToolkit/SpatialSound> |
+| Tazman-Audio's Microsoft Audio Spatializer | <https://developer.dolby.com/blog/tazman-audio-unity-plugin-for-atmos/> , <https://assetstore.unity.com/packages/tools/audio/microsoft-audio-spatializer-116094> |
