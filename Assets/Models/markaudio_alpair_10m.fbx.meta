@@ -1,0 +1,205 @@
+fileFormatVersion: 2
+guid: 15d3e37809d4a468a8a59919dfef4e86
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: markaudio alpair 10m 1
+    100002: markaudio alpair 10m 2
+    100004: markaudio alpair 10m 3
+    100006: markaudio alpair 10m 4
+    100008: markaudio alpair 10m 5
+    100010: markaudio alpair 10m 6
+    100012: markaudio alpair 10m 7
+    100014: markaudio alpair 10m 8
+    100016: //RootNode
+    100018: Object_1
+    100020: Object_10
+    100022: Object_11
+    100024: Object_12
+    100026: Object_13
+    100028: Object_14
+    100030: Object_15
+    100032: Object_16
+    100034: Object_2
+    100036: Object_3
+    100038: Object_4
+    100040: Object_5
+    100042: Object_6
+    100044: Object_7
+    100046: Object_8
+    100048: Object_9
+    400000: markaudio alpair 10m 1
+    400002: markaudio alpair 10m 2
+    400004: markaudio alpair 10m 3
+    400006: markaudio alpair 10m 4
+    400008: markaudio alpair 10m 5
+    400010: markaudio alpair 10m 6
+    400012: markaudio alpair 10m 7
+    400014: markaudio alpair 10m 8
+    400016: //RootNode
+    400018: Object_1
+    400020: Object_10
+    400022: Object_11
+    400024: Object_12
+    400026: Object_13
+    400028: Object_14
+    400030: Object_15
+    400032: Object_16
+    400034: Object_2
+    400036: Object_3
+    400038: Object_4
+    400040: Object_5
+    400042: Object_6
+    400044: Object_7
+    400046: Object_8
+    400048: Object_9
+    2100000: _markaudio_alpair_1
+    2100002: _markaudio_alpair_2
+    2100004: _markaudio_alpair_2_2
+    2100006: _markaudio_alpair_2_3
+    2100008: _markaudio_alpair_2_4
+    2100010: _markaudio_alpair_2_5
+    2100012: _markaudio_alpair_2_6
+    2100014: _markaudio_alpair_3
+    2100016: _markaudio_alpair_4
+    2100018: _markaudio_alpair_4_2
+    2100020: _markaudio_alpair_4_3
+    2100022: _markaudio_alpair_5
+    2100024: _markaudio_alpair_6
+    2100026: _markaudio_alpair_6_2
+    2100028: _markaudio_alpair_7
+    2100030: _markaudio_alpair_8
+    2300000: Object_1
+    2300002: Object_10
+    2300004: Object_11
+    2300006: Object_12
+    2300008: Object_13
+    2300010: Object_14
+    2300012: Object_15
+    2300014: Object_16
+    2300016: Object_2
+    2300018: Object_3
+    2300020: Object_4
+    2300022: Object_5
+    2300024: Object_6
+    2300026: Object_7
+    2300028: Object_8
+    2300030: Object_9
+    3300000: Object_1
+    3300002: Object_10
+    3300004: Object_11
+    3300006: Object_12
+    3300008: Object_13
+    3300010: Object_14
+    3300012: Object_15
+    3300014: Object_16
+    3300016: Object_2
+    3300018: Object_3
+    3300020: Object_4
+    3300022: Object_5
+    3300024: Object_6
+    3300026: Object_7
+    3300028: Object_8
+    3300030: Object_9
+    4300000: Object_1
+    4300002: Object_2
+    4300004: Object_8
+    4300006: Object_9
+    4300008: Object_10
+    4300010: Object_11
+    4300012: Object_16
+    4300014: Object_7
+    4300016: Object_13
+    4300018: Object_14
+    4300020: Object_15
+    4300022: Object_12
+    4300024: Object_3
+    4300026: Object_4
+    4300028: Object_6
+    4300030: Object_5
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
