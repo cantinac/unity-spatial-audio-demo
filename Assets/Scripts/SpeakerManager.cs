@@ -5,11 +5,13 @@ using UnityEngine;
 public class SpeakerManager : MonoBehaviour
 {
 
+#pragma warning disable CS0649
     [SerializeField]
     private AudioClip[] shortSongClips;
 
     [SerializeField]
     private GameObject speakerPrefab;
+#pragma warning restore CS0649
 
     [SerializeField]
     private int numberOfSpeakersToSpawn = 10;
