@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 
 public class SpeakerManager : MonoBehaviour
 {
@@ -23,7 +24,10 @@ public class SpeakerManager : MonoBehaviour
 
     private Transform mainCameraTransform;
 
-    private readonly WaitForSeconds timeBetweenPlayingSongs = new WaitForSeconds(5f);
+    private AudioSource currentAudioSource;
+    private ParticleSystem currentParticleSystem;
+
+    private readonly WaitForSeconds timeBetweenPlayingSongs = new WaitForSeconds(2f);
 
     private void Start()
     {
@@ -64,26 +68,53 @@ public class SpeakerManager : MonoBehaviour
         var song = shortSongClips[Random.Range(0, shortSongClips.Length - 1)];
         var speaker = spawnedSpeakers[Random.Range(0, spawnedSpeakers.Count - 1)];
 
-        var audioSource = speaker.GetComponent<AudioSource>();
-        var particleSystem = speaker.GetComponentInChildren<ParticleSystem>();
+        currentAudioSource = speaker.GetComponent<AudioSource>();
+        currentParticleSystem = speaker.GetComponentInChildren<ParticleSystem>();
 
-        audioSource.clip = song;
-        particleSystem.Play();
+        currentAudioSource.clip = song;
+        currentParticleSystem.Play();
 
-        audioSource.Play();
+        currentAudioSource.Play();
 
-        while (audioSource.isPlaying)
+        while (currentAudioSource.isPlaying)
         {
 
             yield return null;
 
         }
 
+        StopAudioSource(currentAudioSource);
+        StopParticleSystem(currentParticleSystem);
+
+        yield return timeBetweenPlayingSongs;
+
+        StartCoroutine(PlaySongOnSpeaker());
+
+    }
+
+    private static void StopAudioSource(AudioSource audioSource)
+    {
+
+        audioSource.Stop();
         audioSource.clip = null;
+
+    }
+
+    private static void StopParticleSystem(ParticleSystem particleSystem)
+    {
+
         particleSystem.Stop();
         particleSystem.Clear();
 
-        yield return timeBetweenPlayingSongs;
+    }
+
+    public void SkipSong()
+    {
+
+        StopAudioSource(currentAudioSource);
+        StopParticleSystem(currentParticleSystem);
+
+        StopAllCoroutines();
 
         StartCoroutine(PlaySongOnSpeaker());
 
@@ -97,3 +128,29 @@ public class SpeakerManager : MonoBehaviour
     }
 
 }
+
+#if UNITY_EDITOR
+
+[CustomEditor(typeof(SpeakerManager), true)]
+public class CustomScriptableObjectEditor : Editor
+{
+
+    public override void OnInspectorGUI()
+    {
+
+        DrawDefaultInspector();
+
+        var script = (SpeakerManager)target;
+
+        if (GUILayout.Button("Skip Song"))
+        {
+
+            script.SkipSong();
+
+        }
+
+    }
+
+}
+
+#endif
