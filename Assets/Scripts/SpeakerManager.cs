@@ -20,6 +20,12 @@ public class SpeakerManager : MonoBehaviour
     [SerializeField]
     private int radius = 1;
 
+    [SerializeField]
+    private bool spin;
+
+    [SerializeField]
+    private float spinSpeed = 10;
+
     private List<GameObject> spawnedSpeakers = new List<GameObject>();
 
     private Transform mainCameraTransform;
@@ -38,6 +44,18 @@ public class SpeakerManager : MonoBehaviour
 
     }
 
+    private void Update()
+    {
+
+        if (spin)
+        {
+
+            gameObject.transform.Rotate(Vector3.up * spinSpeed * Time.deltaTime);
+
+        }
+
+    }
+
     private void SetupSpeakers()
     {
 
@@ -51,7 +69,7 @@ public class SpeakerManager : MonoBehaviour
             spawnPosition.x += radius * Mathf.Sin(angle * Mathf.Deg2Rad);
             spawnPosition.z += radius * Mathf.Cos(angle * Mathf.Deg2Rad);
 
-            var spawnedObject = Instantiate(speakerPrefab);
+            var spawnedObject = Instantiate(speakerPrefab, gameObject.transform);
 
             spawnedObject.transform.position = spawnPosition;
             spawnedObject.transform.LookAt(mainCameraTransform);
